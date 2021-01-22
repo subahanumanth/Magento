@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Sample_MenuAcl::helloworld" title="Hello World" module="Sample_MenuAcl" sortOrder="51" resource="Sample_MenuAcl::helloworld"/>
+        <add id="Sample_MenuAcl::post" title="Manage Posts" module="Sample_MenuAcl" sortOrder="10" action="menuacl/page/index" resource="Sample_MenuAcl::post" parent="Sample_MenuAcl::helloworld"/>
+        <add id="Sample_MenuAcl::hello_configuration" title="Configuration" module="Sample_MenuAcl" sortOrder="99" parent="Sample_MenuAcl::helloworld" action="adminhtml/system_config/edit/section/helloworld" resource="Sample_MenuAcl::helloworld_configuration"/>
+    </menu>
+</config>
